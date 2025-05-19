@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ISTANA KACA MOBIL - Spesialis Kaca Mobil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0a0f1a, #1a2b3c);
+      color: white;
+      padding: 0;
+    }
+    header {
+      background-color: #111827;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 100px;
+      height: auto;
+    }
+    header h1 {
+      margin: 10px 0 0;
+      font-size: 24px;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .hero h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      color: #cfd8dc;
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+    .cta-btn {
+      background-color: #ef4444;
+      color: white;
+      padding: 14px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .cta-btn:hover {
+      background-color: #dc2626;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: #111827;
+    }
+    .feature {
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 10px;
+      width: 280px;
+      text-align: center;
+    }
+    .feature h3 {
+      color: #facc15;
+      margin-bottom: 10px;
+    }
+    .testimonials {
+      padding: 40px 20px;
+      background-color: #0f172a;
+      text-align: center;
+    }
+    .testimonial {
+      max-width: 600px;
+      margin: 0 auto 20px;
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 8px;
+      font-style: italic;
+    }
+    .testimonial-author {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #facc15;
+    }
+    .gallery {
+      padding: 40px 20px;
+      background-color: #1e293b;
+      text-align: center;
+    }
+    .gallery h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .gallery-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20pv;
+    }
+    .gallery-images img {
+      width: 300px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .faq {
+      padding: 40px 20px;
+      background-color: #111827;
+    }
+    .faq h2 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .faq-item {
+      margin-bottom: 20px;
+    }
+    .faq-item h4 {
+      margin: 0 0 5px;
+      color: #facc15;
+    }
+    .faq-item p {
+      margin: 0;
+      color: #cbd5e1;
+    }
+    .contact {
+      padding: 40px 20px;
+      background-color: #0f172a;
+      text-align: center;
+    }
+    .contact h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .contact-info a {
+      display: block;
+      color: #60a5fa;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+    .form-section {
+      padding: 40px 20px;
+      background-color: #1e293b;
+      text-align: center;
+    }
+    .form-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button[type="submit"] {
+      background-color: #3b82f6;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #2563eb;
+    }
+    .success-message {
+      display: none;
+      color: #22c55e;
+      margin-top: 10px;
+    }
+    footer {
+      background-color: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/xYZ2rhz.jpg" alt="Logo ISTANA KACA MOBIL">
+    <h1>ISTANA KACA MOBIL</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Spesialis Kaca Mobil Anda</h2>
+    <p>Ahli dalam pemasangan kaca mobil dan kaca film berkualitas tinggi. Pelayanan cepat dan terpercaya di Cianjur dan sekitarnya.</p>
+    <a href="https://wa.me/6281388654457" target="_blank"><button class="cta-btn">Pesan Sekarang</button></a>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Harga Terjangkau</h3>
+      <p>Penawaran terbaik tanpa mengorbankan kualitas layanan dan produk.</p>
+    </div>
+    <div class="feature">
+      <h3>Teknisi Profesional</h3>
+      <p>Tim berpengalaman dengan alat lengkap dan standar tinggi.</p>
+    </div>
+    <div class="feature">
+      <h3>Garansi Pekerjaan</h3>
+      <p>Jaminan hasil kerja dan pemasangan yang rapi dan awet.</p>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>Testimoni Pelanggan</h2>
+    <div class="gallery-images">
+        <img src="https://scontent-cgk2-2.xx.fbcdn.net/v/t39.30808-6/496922284_122180955464325973_6417155860712246681_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8ouIiS6Ea-MQ7kNvwHTaqFa&_nc_oc=AdkK3BOREuS-_cZ-NMLjJLVCm45aENO1NAHLrja9IAa9fAiPlnwAKm7g23bLbbIch9I&_nc_zt=23&_nc_ht=scontent-cgk2-2.xx&_nc_gid=R0n5da06TVPbyruO3cEZlA&oh=00_AfK6BBdeuWHz5T-2ixXOJGn_XbhERsdXTB9KTEc0NXLHJw&oe=682A43DB">
+        <img src="https://scontent-cgk2-2.xx.fbcdn.net/v/t39.30808-6/498277992_122180955584325973_4099835674593932851_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=0XFQHFnVlhgQ7kNvwH5_wKy&_nc_oc=AdnQpVKYt4WC4HgZt7W0N8GG-iBZecqvm8sGo357VkZ16_4xwVDzNWHyNLLsnpaCqfU&_nc_zt=23&_nc_ht=scontent-cgk2-2.xx&_nc_gid=GpBpCrwN_AtPm5LKeCA-kw&oh=00_AfLfmbt8CCtOYQGHVaI6euICaOyMPfCriqYgODXYkhm0Jw&oe=682A2F19">
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Galeri Pekerjaan</h2>
+    <div class="gallery-images">
+      <img src="https://scontent-cgk1-2.xx.fbcdn.net/v/t39.30808-6/494794309_122178490904325973_1624963791978781520_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=G7qORJd3xPUQ7kNvwGTXzu4&_nc_oc=AdmGDXB8JcLAM3qs1TFYrMQUsHD7YC7R4D5VUgW8liXQ_ausOA7cqAoN1mKaJgxGn5E&_nc_zt=23&_nc_ht=scontent-cgk1-2.xx&_nc_gid=LqAX1YMTd5gsr1QGxUZiGg&oh=00_AfLwcLgRkE2LtL8IjJwiF0a1h8GMPmtol0adh0zJht6qjg&oe=682A301E" alt=>
+      <img src="https://scontent-cgk1-2.xx.fbcdn.net/v/t39.30808-6/480530417_638233192046723_2299433673785745434_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Gn6juY3oFqAQ7kNvwHMm6NV&_nc_oc=Adl990TWh4gHq8m8mQdL0T_1Ti7VSyjhC3QUeAZr5EWefoSy1YqcmEvWsCef5N1axI4&_nc_zt=23&_nc_ht=scontent-cgk1-2.xx&_nc_gid=J7AGz0_HFFeRxW7QlgLVtA&oh=00_AfJJ1zI02oz7Ee3TGwvDPHoylxhfwR1dSroFe5N_iq-G6w&oe=682A17F1" alt=>
+      <img src="https://scontent-cgk2-2.xx.fbcdn.net/v/t39.30808-6/491186886_122177560682325973_1808565657310400373_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8_WF0DAn5J0Q7kNvwF0mQtB&_nc_oc=AdljcS0TGZt1lOIKkiNZ_Jge9hbZLI2w_oADFRtW3OdmqDYUYE-ubvjzL8hXrtrhz88&_nc_zt=23&_nc_ht=scontent-cgk2-2.xx&_nc_gid=DDoH-2v1fc3vhpUbTkFOYA&oh=00_AfKL2uxCJB1A0WhSyrzRHtct9Tq3A0InxIimygOBng_drw&oe=68307ADD" alt=>
+      <img src="https://scontent-cgk2-2.xx.fbcdn.net/v/t39.30808-6/480490782_638230132047029_7133414802383110927_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7uqVOsKCAV0Q7kNvwEZBv3S&_nc_oc=AdnE-NAlF60lvzkTrxJrTonNxoGqHwyLo45Bv29OmRMgJABAPdvDI9xPnRK2aAH01YU&_nc_zt=23&_nc_ht=scontent-cgk2-2.xx&_nc_gid=26oF8nSs4TkoWza93Afw5w&oh=00_AfIzcj4Ps3114wG9tAPybBbQgvzNPiTIzZx5Ld0iJM-mnA&oe=682A24E9" alt=>
+      <img src="https://scontent-cgk2-1.xx.fbcdn.net/v/t39.30808-6/480798315_637651128771596_2906135451459880956_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Gyjc4IOiZD8Q7kNvwHjdi_l&_nc_oc=AdnIvgxfohckCrEmmjr3lvmY-Ovn7tPriTNgoObPa4m4g7JI9vHNBgTvZ8KziJ6vnNs&_nc_zt=23&_nc_ht=scontent-cgk2-1.xx&_nc_gid=auKVIA6BJhEBdXB10zwoAA&oh=00_AfIGzmcagP16m0T8FzNsT39NoEP53DLH_v6yhVawQkpqBw&oe=682A18FA" alt=>
+      <img src="https://scontent-cgk2-1.xx.fbcdn.net/v/t39.30808-6/480518083_637647378771971_644348877713726405_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Gk7Zl1kkRU4Q7kNvwGYq0sV&_nc_oc=AdlH2QTOUTMMV0kEG2UekLIdEaiFiIJZJsuGwHe0Bp8SLUa65K44-4UYhxUHaEH8a6s&_nc_zt=23&_nc_ht=scontent-cgk2-1.xx&_nc_gid=yWjpEzWnJPRZw27QsnzFqg&oh=00_AfIim6LjtvZbBLkbJ7-bxnQhIWU6WdolPd3TZRGo3mjT_g&oe=682A0B25" alt=>
+      <img src="https://scontent-cgk1-1.xx.fbcdn.net/v/t39.30808-6/480505976_637653102104732_8185409398922722011_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=kwMn-OQ-4s0Q7kNvwFHroTn&_nc_oc=AdnORvRhloq7ZsM3dWiUmYWiJbixF3rYaOirYQxWFl0JF357VydUEsUDdbn2X1w5cP0&_nc_zt=23&_nc_ht=scontent-cgk1-1.xx&_nc_gid=jcL7wiaQKDYr6WPi4RIDIg&oh=00_AfIrMXUJdpH-aXKdfvQ4dlnrPq7ZgHcZOvcKvgnQZ5bIrQ&oe=682A3EEC" alt=>
+      <img src="https://scontent-cgk1-2.xx.fbcdn.net/v/t39.30808-6/482221835_643252371544805_5978543217655779371_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=19coH9fPz2oQ7kNvwFSYpus&_nc_oc=AdkiE4kucbcpicS50Jul-kzfAWlgvOo9MULWeikJ5qNLGNwPD89xFFWtU1OCz__P730&_nc_zt=23&_nc_ht=scontent-cgk1-2.xx&_nc_gid=9xXuSAv5wF5fXqcYbTJLvQ&oh=00_AfIGX7rBs_xaVxlyFFaXj2Jaw6uNs_SaM9jUOryRxtWn0Q&oe=682A151D" alt=>
+      <img src="https://scontent-cgk2-1.xx.fbcdn.net/v/t39.30808-6/481355273_643952318141477_4281989256932027110_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6xWQqW0xkOUQ7kNvwGyUmO6&_nc_oc=AdkBLkAaSfQOIznDnt7EJkjpM2yZXRX4PQ3EqD1yhDuuyg9puXbD_bqB2s6ELE3EpOY&_nc_zt=23&_nc_ht=scontent-cgk2-1.xx&_nc_gid=_aA3TSuQZ8l4RNLx8NV8aw&oh=00_AfIfCczQjGhjoQ2aZe5-vyWWs6qT3oqLRJGRFofYjmUWpA&oe=682A4086" alt=>
+      <img src="https://scontent-cgk1-2.xx.fbcdn.net/v/t39.30808-6/492313334_685800367290005_8941703442665480821_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=N6aSHssFEfMQ7kNvwFF6fY1&_nc_oc=Adnpxnqk5wdXR5Ag8ytzQIq-RcKzF7j7QQ4qeaLo4h9_iFwupvf72NyKGGUk7zxfcno&_nc_zt=23&_nc_ht=scontent-cgk1-2.xx&_nc_gid=yQfzq2QBEuXnO64SlBoXbQ&oh=00_AfIzxuC4f8HgLdNy3uDz93NFnzFD09J28jxvYvUlIhgKiA&oe=682A2CB3" alt=>
+      <img src="https://scontent-cgk2-2.xx.fbcdn.net/v/t39.30808-6/481126544_637646455438730_8609294334306703358_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=lnw_GfvS0sYQ7kNvwGjC0df&_nc_oc=AdkjMs0hUodSkkKGPPiwJsxPyybHA8RwoC95naX8hNhlbqgcQig0LXt_XG8zJXUNQjU&_nc_zt=23&_nc_ht=scontent-cgk2-2.xx&_nc_gid=GQX4-xp2M455wfemV2wFbQ&oh=00_AfIp8ElYXoVEwRiBMajHHzqoIBhhfpX86zcWlKLrf_VizQ&oe=682A33D1" alt=>
+      <img src="https://scontent-cgk2-2.xx.fbcdn.net/v/t39.30808-6/481143535_637646175438758_8069087249050091062_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=kov8i0VqPCsQ7kNvwFs5sDi&_nc_oc=AdlvBXgaGJdfPhJdFzoJyC4HDaHGizcMHkmQBehNWJypWlpP5WTkMsJ5jZmeBiCcKqY&_nc_zt=23&_nc_ht=scontent-cgk2-2.xx&_nc_gid=RrCtfeBDd74pXXpINUxAxQ&oh=00_AfK7sNTnqpqi38NYO_ehxVBGmn9Q_7OCHtcfLi_xn4tF7A&oe=682A2A9C" alt=>
+      <img src="https://scontent-cgk2-2.xx.fbcdn.net/v/t39.30808-6/481126544_637646455438730_8609294334306703358_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=lnw_GfvS0sYQ7kNvwGjC0df&_nc_oc=AdkjMs0hUodSkkKGPPiwJsxPyybHA8RwoC95naX8hNhlbqgcQig0LXt_XG8zJXUNQjU&_nc_zt=23&_nc_ht=scontent-cgk2-2.xx&_nc_gid=GQX4-xp2M455wfemV2wFbQ&oh=00_AfIp8ElYXoVEwRiBMajHHzqoIBhhfpX86zcWlKLrf_VizQ&oe=682A33D1" alt=>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>Pertanyaan Umum</h2>
+    <div class="faq-item">
+      <h4>Berapa lama proses pemasangan kaca mobil?</h4>
+      <p>Biasanya proses memakan waktu sekitar 1–2 jam tergantung jenis kendaraan.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Apakah ada garansi?</h4>
+      <p>Ya, kami memberikan garansi untuk setiap pekerjaan pemasangan kaca mobil dan kaca film.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Apakah melayani panggilan ke rumah?</h4>
+      <p>Ya, kami melayani pemasangan kaca mobil di tempat untuk wilayah tertentu.</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Kirim Pesan Cepat</h2>
+    <form action="https://formsubmit.co/your-.kacamobilistana@gmail.com" method="POST">
+      <input type="text" name="nama" placeholder="Nama Anda" required>
+      <input type="email" name="email" placeholder="Email Anda" required>
+      <textarea name="pesan" placeholder="Pesan Anda" rows="4" required></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://yourdomain.com/terima-kasih.html">
+      <button type="submit">Kirim</button>
+      <p class="success-message">Pesan berhasil dikirim!</p>
+    </form>
+  </section>
+
+  <section class="contact">
+    <h2>Hubungi Kami</h2>
+    <div class="contact-info">
+      <a href="https://wa.me/6281388654457" target="_blank">WhatsApp: 0813-8865-4457</a>
+      <a href="https://instagram.com/istana.kacamobil/" target="_blank">Instagram: @istana.kacamobil</a>
+      <a href="https://www.google.com/maps/place/ISTANA+KACA+MOBIL/@-6.8450258,107.117669,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6853e1fa571add:0x58df57c16955634a!8m2!3d-6.8450258!4d107.1202439!16s%2Fg%2F11q2nypc2b?entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Lokasi di Google Maps</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ISTANA KACA MOBIL. Seluruh hak cipta dilindungi.
+  </footer>
+</body>
+</html>
